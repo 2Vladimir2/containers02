@@ -9,7 +9,7 @@
 
 Создайте в папке containers02 файл Dockerfile со следующим содержимым:
 
-FROM debian:latest
+*FROM debian:latest
 COPY ./site/ /var/www/html/
-CMD ["sh", "-c", "echo hello from $HOSTNAME"]
+CMD ["sh", "-c", "echo hello from $HOSTNAME"]*
 В той же папке проекта создайте папку site. В новой папке создайте файл index.html с произвольным содержимым.*
