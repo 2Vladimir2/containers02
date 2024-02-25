@@ -20,24 +20,33 @@ CMD ["sh", "-c", "echo hello from $HOSTNAME"]
 *Откройте терминал в папке containers02 и выполните команду:
 
 docker build -t containers02 .
+
 Сколько времени создавался образ?
+
 Ответ: Образ создавался Building 10.1s (7/7) FINISHED.
 
 Выполните команду для запуска контейнера:
 
 docker run --name containers02 containers02
+
 Что было выведено в консоли?
+
 Ответ:Было выведенно hello from 8b1787213f2b. 
 
 Удалите контейнер и запустите снова, выполнив команды:
 
 docker rm containers02
+
 docker run -ti --name containers02 containers02 bash
+
 В открывшемся окне выполните команды:
 
 cd /var/www/html/
+
 ls -l
+
 Что выводится на экране?
+
 Ответ:Вывелось -rw-r--r-- 1 root root 1 Feb 25 20:42 site.
 
 Закройте окно командой exit.*
